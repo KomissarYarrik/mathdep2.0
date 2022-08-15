@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&family=Square+Peg&display=swap');
+@font-face {
+	font-family: 'Muller';
+	src: url('../fonts/MullerRegular.eot');
+	src: url('../fonts/MullerRegular.woff') format('woff'), url('../fonts/MullerRegular.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Muller-Bold';
+	src: url('../fonts/MullerBold.eot');
+	src: url('../fonts/MullerBold.woff') format('woff'), url('../fonts/MullerBold.ttf') format('truetype');
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'font', sans-serif;/*шрифт*/
+
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1 1 auto;
+} 
+
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+h1 {
+    font-family: 'Muller-Bold';
+    font-size: 55px;
+    line-height: 120%;
+    text-align: left
+}
+
+@import "header/_header"; 
+@import "main/_main"; 
+@import "footer/_footer"; 
