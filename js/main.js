@@ -7,21 +7,21 @@ const firstHeight = first.offsetHeight;
 let lastScrollTop = 0;
 
 window.addEventListener('scroll', () => {
-	let scrollDistance = window.scrollY;
+    let scrollDistance = window.scrollY;
     if (scrollDistance > lastScrollTop) {
-		header.classList.remove('header--fixed');
-		first.style.marginTop = null;
-	} else {
-		header.classList.add('header--fixed');
-		
-	}
+        header.classList.remove('header--fixed');
+        first.style.marginTop = null;
+    } else {
+        header.classList.add('header--fixed');
 
-	if (scrollDistance === 0) {
-		header.classList.remove('header--fixed');
-		first.style.marginTop = null;
-	}
+    }
 
-	lastScrollTop = scrollDistance;
+    if (scrollDistance === 0) {
+        header.classList.remove('header--fixed');
+        first.style.marginTop = null;
+    }
+
+    lastScrollTop = scrollDistance;
 });
 
 
@@ -50,7 +50,7 @@ $(document).ready(function () {
 });
 
 
-// --- swiper ---
+// --- welcome-swiper ---
 
 var swiper = new Swiper(".welcome-swiper", {
     direction: "vertical",
@@ -62,5 +62,16 @@ var swiper = new Swiper(".welcome-swiper", {
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
+    },
+});
+
+
+// --- info-swiper ---
+
+var swiper = new Swiper(".info-swiper", {
+    loop: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
     },
 });

@@ -40,6 +40,13 @@ h1 {
     text-align: left
 }
 
+h2 {
+    font-family: 'Muller-Bold';
+    font-size: 40px;
+    line-height: 40px;
+    text-align: left
+}
+
 @import "header/_header"; 
 @import "main/_main"; 
 @import "footer/_footer"; 
