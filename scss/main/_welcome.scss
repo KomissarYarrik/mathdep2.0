@@ -12,6 +12,10 @@
     @media (max-width: 991px) {
         margin-bottom: 32px;
 
+        &--lock {
+            margin-top: 76px;
+        }
+
         & .links {
             display: none;
         }

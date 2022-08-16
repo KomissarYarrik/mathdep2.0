@@ -245,6 +245,9 @@ h2 {
   .welcome {
     margin-bottom: 32px;
   }
+  .welcome--lock {
+    margin-top: 76px;
+  }
   .welcome .links {
     display: none;
   }
