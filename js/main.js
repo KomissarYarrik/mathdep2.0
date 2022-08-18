@@ -1,7 +1,7 @@
 // --- menu scroll ---
 
 const header = document.querySelector('.header');
-const first = document.querySelector('.welcome');
+const first = document.querySelector('.main');
 const headerHeight = header.offsetHeight;
 const firstHeight = first.offsetHeight;
 let lastScrollTop = 0;

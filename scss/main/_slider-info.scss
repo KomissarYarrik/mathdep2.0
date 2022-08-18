@@ -1,9 +1,13 @@
 .slider-info {
-    margin-bottom: 164px;
+    margin-bottom: 129px;
+
+    @media (max-width: 991px) {
+        margin-bottom: 32px;
+    }
 }
 
 .swiper-slide {
-    padding-right: 0
+    padding-right: 0;
 }
 
 .info-swiper .swiper-slide {
