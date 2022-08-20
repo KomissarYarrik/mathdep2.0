@@ -1,7 +1,7 @@
 .slider-info {
     margin-bottom: 129px;
 
-    @media (max-width: 991px) {
+    @media (max-width: 768px) {
         margin-bottom: 32px;
     }
 }
@@ -17,6 +17,7 @@
 
 .info-swiper-left-img {
     width: 578px;
+    min-width: 300px;
     height: 408px;
 }
 

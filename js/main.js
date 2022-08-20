@@ -13,7 +13,7 @@ window.addEventListener('scroll', () => {
         first.style.marginTop = null;
     } else {
         header.classList.add('header--fixed');
-        
+
         if ($(window).width() <= 991) {
             first.style.marginTop = `${headerHeight}px`;
         }
