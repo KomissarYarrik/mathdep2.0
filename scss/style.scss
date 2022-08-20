@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&family=Square+Peg&display=swap');
+@font-face {
+	font-family: 'Muller';
+	src: url('../fonts/MullerRegular.eot');
+	src: url('../fonts/MullerRegular.woff') format('woff'), url('../fonts/MullerRegular.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Muller-Bold';
+	src: url('../fonts/MullerBold.eot');
+	src: url('../fonts/MullerBold.woff') format('woff'), url('../fonts/MullerBold.ttf') format('truetype');
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'font', sans-serif;/*шрифт*/
+
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1 1 auto;
+} 
+
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+h1 {
+    font-family: 'Muller-Bold';
+    font-size: 55px;
+    line-height: 120%;
+    text-align: left
+}
+
+h2 {
+    font-family: 'Muller-Bold';
+    font-size: 40px;
+    line-height: 40px;
+    text-align: left;
+
+    @media (max-width: 991px) {
+        font-size: 32px;
+    }
+}
+
+.line::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0px;
+    margin-bottom: 32px;
+    border-bottom: 2px solid #F21F5B;
+}
+
+.links {
+    margin-left: 20px;
+    margin-top: -53px;
+}
+
+@import "header/_header"; 
+@import "main/_main"; 
+@import "footer/_footer"; 
