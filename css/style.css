@@ -775,6 +775,7 @@ h2 {
 @media (max-width: 768px) {
   .science-about {
     margin-bottom: 64px;
+    text-align: center;
   }
 }
 .science-about__text {
