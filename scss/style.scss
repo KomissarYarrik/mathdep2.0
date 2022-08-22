@@ -13,8 +13,10 @@
 html,
 body {
     height: 100%;
-    font-family: 'font', sans-serif;/*шрифт*/
-
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
 }
 
 .wrapper {
@@ -63,6 +65,10 @@ h2 {
 .links {
     margin-left: 20px;
     margin-top: -53px;
+}
+
+.bold {
+    font-weight: 700;
 }
 
 @import "header/_header"; 

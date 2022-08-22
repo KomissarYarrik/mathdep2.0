@@ -1,0 +1,138 @@
+.science-welcome {
+    display: flex;
+    margin-top: 140px;
+    align-items: center;
+    margin-bottom: 129px;
+    gap: 16px;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        margin-top: 64px;
+        gap: 64px;
+        text-align: center;
+        margin-bottom: 64px;
+    }
+
+    &__title {
+        font-family: 'Muller-Bold';
+        font-size: 55px;
+        line-height: 120%;
+        margin-bottom: 64px;
+
+        @media (max-width: 991px) {
+            font-size: 32px;
+        }
+
+        @media (max-width: 768px) {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+    }
+
+    &__subtitle {
+        font-size: 24px;
+
+        @media (max-width: 768px) {
+            font-weight: 700;
+        }
+    }
+
+    &__img {
+        height: 580px;
+
+        @media (max-width: 991px) {
+            height: 340px;
+        }
+
+        @media (max-width: 768px) {
+            order: -1;
+            height: 400px;
+        }
+    }
+}
+
+.science-about {
+    margin-bottom: 129px;
+
+    @media (max-width: 768px) {
+        margin-bottom: 64px;
+    }
+
+    &__text {
+        font-size: 22px;
+        line-height: 120%;
+
+        @media (max-width: 768px) {
+            text-align: justify;
+        }
+    }
+}
+
+.science-areas {
+    margin-bottom: 129px;
+
+    @media (max-width: 768px) {
+        margin-bottom: 64px;
+    }
+
+    &__title {
+        margin-bottom: 96px;
+
+        @media (max-width: 768px) {
+            margin-bottom: 48px;
+            text-align: center;
+        }
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 64px;
+
+        &:nth-child(odd) .science-areas__img {
+            order: -1;
+        }
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            gap: 32px;
+
+            & .science-areas__img {
+                order: -1;
+            }
+        }
+    }
+
+    &__content {
+        width: 45%;
+        font-size: 20px;
+        line-height: 135%;
+
+        @media (max-width: 768px) {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    &__item-title {
+        font-family: 'Muller-Bold';
+        font-size: 28px;
+        margin-bottom: 24px;
+    }
+
+    &__link {
+        color: #315FD9 !important;
+    }
+
+    &__img {
+        height: 216px;
+        width: 40%;
+        border-radius: 20px;
+
+        @media (max-width: 768px) {
+            width: 100%;
+            border-radius: 0;
+        }
+    }
+}
