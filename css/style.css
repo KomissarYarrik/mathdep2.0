@@ -781,11 +781,6 @@ h2 {
   font-size: 22px;
   line-height: 120%;
 }
-@media (max-width: 768px) {
-  .science-about__text {
-    text-align: justify;
-  }
-}
 
 .science-areas {
   margin-bottom: 129px;
