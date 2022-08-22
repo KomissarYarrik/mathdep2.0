@@ -61,10 +61,6 @@
     &__text {
         font-size: 22px;
         line-height: 120%;
-
-        @media (max-width: 768px) {
-            text-align: justify;
-        }
     }
 }
 
