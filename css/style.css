@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&family=Square+Peg&display=swap");
 @font-face {
   font-family: "Muller";
@@ -14,7 +15,7 @@ body {
   height: 100%;
   font-family: "Raleway";
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
 }
 
@@ -44,13 +45,29 @@ h1 {
 h2 {
   font-family: "Muller-Bold";
   font-size: 40px;
-  line-height: 40px;
+  line-height: 120%;
   text-align: left;
 }
 @media (max-width: 991px) {
   h2 {
     font-size: 32px;
   }
+}
+
+h3 {
+  font-family: "Muller-Bold";
+  font-size: 32px;
+  line-height: 120%;
+  text-align: left;
+}
+
+.page-title {
+  margin-top: 96px;
+  margin-bottom: 64px;
+}
+
+.section-title {
+  margin-bottom: 64px;
 }
 
 .line::after {
@@ -69,6 +86,37 @@ h2 {
 
 .bold {
   font-weight: 700;
+}
+
+.dash-list {
+  margin-bottom: 16px;
+}
+.dash-list:before {
+  content: "— ";
+}
+
+.personnel-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 64px;
+}
+@media (max-width: 575px) {
+  .personnel-list {
+    gap: 32px;
+  }
+}
+.personnel-list__item {
+  max-width: 250px;
+  text-align: center;
+  font-family: "Muller";
+  font-size: 22px;
+}
+.personnel-list__img {
+  width: 200px;
+  height: 200px;
+  border-radius: 90%;
+  margin-bottom: 32px;
 }
 
 @media (max-width: 991px) {
@@ -256,6 +304,15 @@ h2 {
   z-index: 1;
 }
 
+.main {
+  margin-top: 76px;
+}
+@media (max-width: 991px) {
+  .main {
+    margin-top: 0;
+  }
+}
+
 .welcome {
   height: 560px;
   background: #333333;
@@ -264,7 +321,6 @@ h2 {
 .welcome__circles-container {
   max-width: 1440px;
   margin: 0 auto;
-  padding-top: 64px;
   z-index: 51;
 }
 @media (max-width: 991px) {
@@ -715,7 +771,7 @@ h2 {
 
 .science-welcome {
   display: flex;
-  margin-top: 140px;
+  margin-top: 72px;
   align-items: center;
   margin-bottom: 129px;
   gap: 16px;
@@ -846,6 +902,51 @@ h2 {
   .science-areas__img {
     width: 100%;
     border-radius: 0;
+  }
+}
+
+.science-item-welcome {
+  font-size: 24px;
+  margin-bottom: 129px;
+}
+@media (max-width: 575px) {
+  .science-item-welcome {
+    text-align: center;
+  }
+}
+@media (max-width: 575px) {
+  .science-item-welcome .page-title, .science-item-welcome .section-title {
+    text-align: center;
+  }
+}
+.science-item-welcome__desc {
+  margin-bottom: 64px;
+}
+
+.science-item-managers {
+  margin-bottom: 129px;
+}
+@media (max-width: 575px) {
+  .science-item-managers .section-title {
+    text-align: center;
+  }
+}
+
+.science-item-members {
+  margin-bottom: 129px;
+}
+@media (max-width: 575px) {
+  .science-item-members .section-title {
+    text-align: center;
+  }
+}
+
+.science-item-publications {
+  margin-bottom: 129px;
+}
+@media (max-width: 575px) {
+  .science-item-publications .section-title {
+    text-align: center;
   }
 }
 

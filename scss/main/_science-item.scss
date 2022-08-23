@@ -1,0 +1,49 @@
+.science-item-welcome {
+    font-size: 24px;
+    margin-bottom: 129px;
+
+    @media (max-width: 575px) {
+        text-align: center;
+    }
+
+    & .page-title,
+    & .section-title {
+        @media (max-width: 575px) {
+            text-align: center;
+        }
+    }
+
+    &__desc {
+        margin-bottom: 64px;
+    }
+}
+
+.science-item-managers {
+    margin-bottom: 129px;
+
+    & .section-title {
+        @media (max-width: 575px) {
+            text-align: center;
+        }
+    }
+}
+
+.science-item-members {
+    margin-bottom: 129px;
+
+    & .section-title {
+        @media (max-width: 575px) {
+            text-align: center;
+        }
+    }
+}
+
+.science-item-publications {
+    margin-bottom: 129px;
+
+    & .section-title {
+        @media (max-width: 575px) {
+            text-align: center;
+        }
+    }
+}

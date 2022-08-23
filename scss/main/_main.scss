@@ -1,5 +1,14 @@
+.main {
+    margin-top: 76px;
+
+    @media (max-width: 991px) {
+        margin-top: 0;
+    }
+}
+
 @import "_welcome"; 
 @import "_slider-info"; 
 @import "_galery"; 
 @import "_news"; 
 @import "_science"; 
+@import "_science-item"; 

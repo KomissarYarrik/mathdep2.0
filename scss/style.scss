@@ -15,7 +15,7 @@ body {
     height: 100%;
     font-family: 'Raleway';
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 16px;
 }
 
@@ -45,12 +45,28 @@ h1 {
 h2 {
     font-family: 'Muller-Bold';
     font-size: 40px;
-    line-height: 40px;
+    line-height: 120%;
     text-align: left;
 
     @media (max-width: 991px) {
         font-size: 32px;
     }
+}
+
+h3 {
+    font-family: 'Muller-Bold';
+    font-size: 32px;
+    line-height: 120%;
+    text-align: left;
+}
+
+.page-title {
+    margin-top: 96px;
+    margin-bottom: 64px;
+}
+
+.section-title {
+    margin-bottom: 64px;
 }
 
 .line::after {
@@ -69,6 +85,39 @@ h2 {
 
 .bold {
     font-weight: 700;
+}
+
+.dash-list {
+    margin-bottom: 16px;
+
+    &:before {
+        content: '— ';
+    }
+}
+
+.personnel-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 64px;
+
+    @media (max-width: 575px) {
+        gap: 32px;
+    }
+
+    &__item {
+        max-width: 250px;
+        text-align: center;
+        font-family: 'Muller';
+        font-size: 22px;
+    }
+
+    &__img {
+        width: 200px;
+        height: 200px;
+        border-radius: 90%;
+        margin-bottom: 32px;
+    }
 }
 
 @import "header/_header"; 
