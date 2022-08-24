@@ -498,11 +498,6 @@ h3 {
 .slider-info {
   margin-bottom: 129px;
 }
-@media (max-width: 768px) {
-  .slider-info {
-    margin-bottom: 32px;
-  }
-}
 
 .swiper-slide {
   padding-right: 0;

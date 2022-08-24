@@ -73,6 +73,7 @@ var swiper = new Swiper(".welcome-swiper", {
 
 var swiper = new Swiper(".info-swiper", {
     loop: true,
+    autoHeight: true,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
